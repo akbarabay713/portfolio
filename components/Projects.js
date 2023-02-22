@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import { EyeIcon } from "@heroicons/react/24/outline";
-import Logo from "./logo";
 import { urlFor } from "../sanity";
 import Link from "next/link";
+import Image from "next/image";
 
 const Projects = ({ projects }) => {
   return (
@@ -62,11 +62,13 @@ const Projects = ({ projects }) => {
             </h1>
             <div className="flex justify-center items-center gap-5 box-border">
               {project.tech.map((t) => (
-                <img
+                <Image
                   key={t._id}
                   alt="icon"
                   src={urlFor(t.imageUrl).url()}
                   className={`w-7 h-7 object-contain`}
+                  width="50"
+                  height="50"
                 />
               ))}
             </div>

@@ -1,7 +1,6 @@
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 const Navbar = ({ isMoved, socials }) => {
-  // console.log(socials);
   return (
     <nav className="h-14 w-full flex items-center justify-between px-5 md:px-36 lg:px-36 py-10 fixed z-20">
       <motion.div

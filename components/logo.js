@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 const Logo = ({ width, image }) => {
   return (
     <motion.div
@@ -18,7 +19,13 @@ const Logo = ({ width, image }) => {
       viewport={{ once: true }}
       className={`w-${width} h-${width} flex items-center justify-center rounded-full bg-white p-2 box-border overflow-hidden hover:bg-transparent`}
     >
-      <img alt="icon" src={image} className={`w-20 h-20 object-contain`} />
+      <Image
+        alt="icon"
+        src={image}
+        className={`w-20 h-20 object-contain`}
+        width="100"
+        height="100"
+      />
     </motion.div>
   );
 };

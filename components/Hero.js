@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -28,10 +29,12 @@ const Hero = ({ pageInfo, socials }) => {
     <>
       <Navbar isMoved={scrolled} socials={socials} />
       <div className="h-screen w-screen flex flex-col items-center justify-center gap-y-5  snap-center">
-        <img
+        <Image
           alt="image"
           src={urlFor(pageInfo.profileImg).url()}
           className="md:w-48 md:h-48 w-36 h-36 shrink-0 rounded-full mx-auto object-cover"
+          width="500"
+          height="500"
         />
 
         <h2 className="uppercase tracking-[10px] text-xs md:text-sm text-center text-[#979697]">

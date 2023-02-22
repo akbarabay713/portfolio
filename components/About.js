@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Cursor } from "react-simple-typewriter";
 import { urlFor } from "../sanity";
+import Image from "next/image";
 
 const About = ({ pageInfo }) => {
   return (
@@ -42,7 +43,9 @@ const About = ({ pageInfo }) => {
         viewport={{ once: true }}
         className="mt-8 md:mt-0"
       >
-        <img
+        <Image
+          width="700"
+          height="700"
           alt="image"
           src={urlFor(pageInfo.bannerImg).url()}
           className="w-36 h-36 md:w-48 md:h-80 md:rounded-lg shrink-0 rounded-full mx-auto object-cover "
