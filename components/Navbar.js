@@ -61,7 +61,7 @@ const Navbar = ({ isMoved, socials }) => {
         transition={{
           duration: 1.5,
         }}
-        className="flex items-center gap-5"
+        className="flex items-center  justify-center"
       >
         <SocialIcon
           url={"#contact"}
@@ -70,9 +70,12 @@ const Navbar = ({ isMoved, socials }) => {
           fgColor="gray"
           style={{ cursor: "pointer" }}
         />
-        <p className="text-white hidden md:inline-block lg:inline-block">
+        <a
+          href="#contact"
+          className="text-white hidden md:inline-block lg:inline-block"
+        >
           Contact me
-        </p>
+        </a>
       </motion.div>
     </nav>
   );

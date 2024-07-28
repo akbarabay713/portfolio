@@ -48,12 +48,12 @@ const About = ({ pageInfo }) => {
           height="700"
           alt="image"
           src={urlFor(pageInfo.bannerImg).url()}
-          className="w-36 h-36 md:w-48 md:h-80 md:rounded-lg shrink-0 rounded-full mx-auto object-cover "
+          className="w-24 h-24 md:w-48 md:h-80 md:rounded-lg shrink-0 rounded-full mx-auto object-cover "
         />
       </motion.div>
 
-      <div className="px-2 md:w-80">
-        <h1 className="text-[#f9f9f9] font-medium text-xl md:text-3xl">
+      <div className="px-2 md:w-[50%]">
+        <h1 className="text-[#f9f9f9] font-medium text-xl md:text-3xl md:mb-8 mb-2">
           Here is a little about me
         </h1>
         <p className="text-[#979697] font-light  sm:text-xs md:text-base">

@@ -7,7 +7,11 @@ import Navbar from "./Navbar";
 const Hero = ({ pageInfo, socials }) => {
   const [scrolled, setScroll] = useState(null);
   const [text] = useTypewriter({
-    words: [`hi, my name is ${pageInfo.name}`, "<iReallyLikeCoding />"],
+    words: [
+      `hi, the name's ${pageInfo.name}`,
+      "<iReallyLikeCoding />",
+      "Who-Loves-Coffe.tsx",
+    ],
     loop: true,
     delaySpeed: 2000,
     typeSpeed: 100,
@@ -24,7 +28,7 @@ const Hero = ({ pageInfo, socials }) => {
       }
     });
   });
-  // console.log(scrolled);
+
   return (
     <>
       <Navbar isMoved={scrolled} socials={socials} />
@@ -38,7 +42,7 @@ const Hero = ({ pageInfo, socials }) => {
         />
 
         <h2 className="uppercase tracking-[10px] text-xs md:text-sm text-center text-[#979697]">
-          frontend web developer
+          Software Engineer
         </h2>
         <h1 className="text-[#f9f9f9] font-semibold text-2xl md:text-5xl lg:text-5xl">
           <span>{text}</span>

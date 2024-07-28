@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import About from "./../components/About";
 import Contact from "./../components/Contact";
 import Projects from "./../components/Projects";
+import Experience from "../components/Experience";
 import { fetchPageInfo } from "./../utils/fetchPageInfo";
 import { fetchSocials } from "./../utils/fetchSocials";
 import { fetchProjects } from "./../utils/fetchProjects";
@@ -32,6 +33,10 @@ export default function Home(props) {
       <section id="skills">
         <Skills skills={skills} />
       </section>
+
+      {/* <section id="experience">
+          <Experience projects={projects} />
+        </section> */}
 
       <section id="projects">
         <Projects projects={projects} />

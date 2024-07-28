@@ -88,7 +88,7 @@ const Contact = ({ pageInfo }) => {
         Lets get in touch
       </h1>
 
-      <div>
+      <div className="md:w-[50%] w-[90%]">
         <div className="my-5 flex justify-between flex-col md:flex-row lg:flex-row gap-2 ">
           <p className=" bg-[#60605f] p-3 flex gap-3 flex-1 rounded-md">
             <EnvelopeIcon className="h-6 w-6 text-[#aee9a4] animate-pulse" />
