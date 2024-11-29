@@ -37,14 +37,15 @@ const Projects = ({ projects }) => {
               <Link href={project.linkProject}>
                 <EyeIcon className="h-8 w-8 text-[gray] cursor-pointer  " />
               </Link>
-
-              <SocialIcon
-                network="github"
-                url={project.linkGithub}
-                bgColor="transparent"
-                fgColor="gray"
-                style={{ cursor: "pointer" }}
-              />
+              {project.linkGithub && (
+                <SocialIcon
+                  network="github"
+                  url={project.linkGithub}
+                  bgColor="transparent"
+                  fgColor="gray"
+                  style={{ cursor: "pointer" }}
+                />
+              )}
             </div>
 
             <motion.img
