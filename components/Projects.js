@@ -28,7 +28,7 @@ const Projects = ({ projects }) => {
         projects
       </motion.h3>
       <div className="w-full relative flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thumb-green-600 scrollbar-track-zinc-800 scrollbar-thin">
-        {projects.map((project, i) => (
+        {projects.reverse().map((project, i) => (
           <motion.div
             key={project._id}
             className="w-screen h-screen  flex flex-shrink-0 flex-col items-center justify-center space-y-2 snap-center py-8 md:p-44"

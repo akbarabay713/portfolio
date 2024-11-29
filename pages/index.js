@@ -15,7 +15,7 @@ export default function Home(props) {
   const { pageInfo, skills, projects, socials } = props;
 
   return (
-    <div className="h-screen w-screen bg-[#1b1c1e] scrollbar-thin scrollbar-thumb-green-600 scrollbar-track-zinc-800  snap-y snap-mandatory scroll-smooth ">
+    <div className="h-screen w-screen bg-[#1b1c1e] scrollbar-thin scrollbar-thumb-green-600 scrollbar-track-zinc-800  snap-y snap-mandatory scroll-smooth overflow-x-hidden">
       <Head>
         <title>akbar</title>
         <meta name="description" content="portfolio 1.0, akbar abu" />
